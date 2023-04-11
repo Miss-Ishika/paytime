@@ -1,0 +1,232 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: url("imges/svg-wave-generator.gif");
+    background-repeat: no-repeat;
+    background-size: 1550px 700px;
+    
+
+}
+
+
+.navbar{
+    display: flex;
+    position: fixed;
+    width: 1550px;
+    height: 50px;
+    color: transparent;
+    padding-top: 30px;
+    padding-left: 30px;
+    
+
+}
+
+.navlist{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    list-style: none;
+
+}
+
+.item{
+    
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.item a{
+    margin: 70px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.item :hover{
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+.im1{
+    padding-top: 150px;
+    padding-left: 200px;
+}
+
+.img{
+    height: 400px;
+    width: 400px;
+}
+
+.non-nav{
+    display: flex;
+    padding-top: 0px;
+}
+
+.wrapper{
+    margin-top: 100px;
+    margin-left: 370px;
+    height: 380px;
+    width: 400px;
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.wrapper.active {
+    height: 400px;
+}
+
+.wrapper .login{
+    width: 100%;
+    padding: 50px;
+}
+
+.wrapper .login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .login{
+    transition: none;
+    transform: translateX(-400px);
+
+}
+
+.wrapper .Register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .Register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+
+
+
+h2{
+    font-size: 2em;
+    color: rgb(68, 14, 131);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(68, 14, 131);
+    margin: 30px 0;
+
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(68, 14, 131);
+    margin: 17px 0;
+
+}
+
+ .input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: rgb(68, 14, 131);
+    font-weight: 800;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label, 
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(68, 14, 131);
+    font-weight: 400;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+}  
+
+.remember{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: .9em;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember label input{
+    accent-color: black;
+}
+.remember a{
+    text-decoration: none;
+    color: rgb(68, 14, 131);
+}
+.remember a:hover{
+    text-decoration: underline;
+}
+
+
+.btn{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(68, 14, 131);
+    border: none;
+    font-size: 18px;
+    color: rgb(166, 154, 233);
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 15px 0 10px;
+}
+
+
+.no-acc{
+    margin: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+p a{
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(68, 14, 131);
+
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+   
